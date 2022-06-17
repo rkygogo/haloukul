@@ -37,7 +37,7 @@ inbounds:
   protocol: shadowsocks
   settings:
     password: UUID
-    method: SSencryption
+    method: chacha20-ietf-poly1305
     ivcheck: true
   streamSettings:
     network: ws
