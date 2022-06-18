@@ -68,8 +68,7 @@ inbounds:
     auth: password
     accounts:
     - user: UUID
-    - pass: UUID
-    ip: 127.0.0.1
+      pass: UUID
   streamSettings:
     network: ws
     wsSettings:
@@ -84,3 +83,4 @@ outbounds:
   tag: direct
   settings:
     domainStrategy: UseIPv4
+    
