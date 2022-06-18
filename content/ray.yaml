@@ -62,7 +62,7 @@ inbounds:
     destOverride:
     - http
     - tls
-- port: 61083
+- port: 52123
   protocol: socks
   settings:
     auth: password
