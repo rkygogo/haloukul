@@ -65,10 +65,11 @@ inbounds:
 - port: 52123
   protocol: socks
   settings:
-    auth: noauth
+    auth: password
     accounts:
     - user: UUID
     - pass: UUID
+    ip: 127.0.0.1
   streamSettings:
     network: ws
     wsSettings:
@@ -83,11 +84,3 @@ outbounds:
   tag: direct
   settings:
     domainStrategy: UseIPv4
-- protocol: socks
-  tag: direct
-  settings:
-    servers:
-    - address: 127.0.0.1
-    - port: 9050
-  
-    
