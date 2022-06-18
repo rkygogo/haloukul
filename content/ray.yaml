@@ -66,6 +66,9 @@ inbounds:
   protocol: socks
   settings:
     auth: noauth
+    accounts:
+    - user: UUID
+    - pass: UUID
   streamSettings:
     network: ws
     wsSettings:
@@ -83,6 +86,7 @@ outbounds:
 - protocol: socks
   tag: direct
   settings:
+    servers:
     - address: 127.0.0.1
     - port: 9050
   
