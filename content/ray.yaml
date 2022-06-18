@@ -62,6 +62,19 @@ inbounds:
     destOverride:
     - http
     - tls
+- port: 61083
+  protocol: socks
+  settings:
+    auth: password
+  streamSettings:
+    network: ws
+    wsSettings:
+      path: /UUID-sos
+  sniffing:
+    enabled: true
+    destOverride:
+    - http
+    - tls   
 outbounds:
 - protocol: freedom
   tag: direct
