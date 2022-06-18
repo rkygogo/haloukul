@@ -73,11 +73,6 @@ inbounds:
     network: ws
     wsSettings:
       path: /UUID-sos
-  sniffing:
-    enabled: true
-    destOverride:
-    - http
-    - tls   
 outbounds:
 - protocol: freedom
   tag: direct
