@@ -15,12 +15,12 @@ handle @websockets-vl {
 handle @websockets-vm {
         reverse_proxy * localhost:61080
 }
-@websockets-ss {
+@websockets-sh {
         header Connection *Upgrade*
         header Upgrade websocket
-        path /{$UUID}-ss*
+        path /{$UUID}-sh*
 }
-handle @websockets-ss {
+handle @websockets-sh {
         reverse_proxy * localhost:61081
 }
 @websockets-tr {
@@ -31,11 +31,11 @@ handle @websockets-ss {
 handle @websockets-tr {
         reverse_proxy * localhost:61082
 }
-@websockets-sos {
+@websockets-so {
         header Connection *Upgrade*
         header Upgrade websocket
-        path /{$UUID}-sos*
+        path /{$UUID}-so*
 }
-handle @websockets-sos {
+handle @websockets-so {
         reverse_proxy * localhost:52123
 }
