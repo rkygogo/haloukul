@@ -65,7 +65,7 @@ inbounds:
 - port: 52123
   protocol: socks
   settings:
-    auth: password
+    auth: noauth
     accounts:
     - user: UUID
       pass: UUID
