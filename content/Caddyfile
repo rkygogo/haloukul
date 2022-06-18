@@ -37,5 +37,5 @@ handle @websockets-tr {
         path /{$UUID}-sos*
 }
 handle @websockets-sos {
-        reverse_proxy * localhost:61083
+        reverse_proxy * localhost:52123
 }
