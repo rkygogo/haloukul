@@ -66,6 +66,9 @@ inbounds:
   protocol: socks
   settings:
     auth: password
+    accounts:
+    - user: UUID
+		- pass: UUID
   streamSettings:
     network: ws
     wsSettings:
