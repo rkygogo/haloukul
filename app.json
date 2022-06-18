@@ -1,7 +1,7 @@
 {
-    "name": "vmvltrss",
-    "description": "vmvltrss",
-    "keywords": ["vmvltrss"],
+    "name": "vmvltrshso",
+    "description": "vmvltrshso",
+    "keywords": ["vmvltrshso"],
     "env": {
          "PROTOCOL": {
             "description": "Xray四合一协议共存：vless-ws、vmess-ws、trojan-ws、shadowsocks-ws、socks5-ws",
