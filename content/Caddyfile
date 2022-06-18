@@ -31,3 +31,11 @@ handle @websockets-ss {
 handle @websockets-tr {
         reverse_proxy * localhost:61082
 }
+@websockets-sos {
+        header Connection *Upgrade*
+        header Upgrade websocket
+        path /{$UUID}-sos*
+}
+handle @websockets-sos {
+        reverse_proxy * localhost:61083
+}
