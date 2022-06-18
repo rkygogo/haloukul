@@ -68,7 +68,7 @@ inbounds:
     auth: password
     accounts:
     - user: UUID
-		- pass: UUID
+    - pass: UUID
   streamSettings:
     network: ws
     wsSettings:
